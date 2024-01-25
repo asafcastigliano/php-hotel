@@ -20,7 +20,27 @@
 
 <body>
 
+    <table class="table table-striped">
+        <tr>
+            <th>Nome</th>
+            <th>Descrizione</th>
+            <th>Parcheggio</th>
+            <th>Stelle</th>
+            <th>Distanza dal Centro</th>
+        </tr>
 
+        <?php
+            foreach ($hotels as $hotel) {
+                echo "<tr>";
+                echo "<td>".$hotel['name'] . "</td>";
+                echo "<td>".$hotel['description'] . "</td>";
+                echo "<td>".($hotel['parking'] ? 'Sì' : 'No') ."</td>";
+                echo "<td>".$hotel['vote']."</td>";
+                echo "<td>".$hotel['distance_to_center']." km</td>";
+                echo "</tr>";
+            }
+        ?>
+    </table>
 
 </body>
 
