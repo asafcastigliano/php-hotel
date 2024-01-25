@@ -21,7 +21,7 @@
 
     <?php
     
-        include_once(__DIR__."./partials/template/body.php");
+        include_once(__DIR__."/partials/template/body.php");
 
     ?>
 
